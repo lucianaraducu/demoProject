@@ -51,7 +51,7 @@ private extension ActivityDetailsViewController {
             player?.play()
             
         } catch let error {
-            print(error.localizedDescription)
+            presentErrorAlert(error: error)
         }
     }
 }

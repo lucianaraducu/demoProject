@@ -9,12 +9,10 @@ import Foundation
 import UIKit
 
 extension UIViewController {
-    func presentErrorAlert(error: Error, completion: (() -> Void)? = nil) {
+    func presentErrorAlert(error: Error) {
         let cancelText = error.errorMessage
         
-        let action = UIAlertAction(title: cancelText, style: .default) { _ in
-            completion?()
-        }
+        let action = UIAlertAction(title: "ok", style: .default) {_ in }
         let alertController = UIAlertController(title: cancelText, message: nil, preferredStyle: .alert)
         alertController.addAction(action)
         present(alertController, animated: true, completion: nil)

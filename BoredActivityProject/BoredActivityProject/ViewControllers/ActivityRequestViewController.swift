@@ -37,7 +37,7 @@ class ActivityRequestViewController: UIViewController {
             }
             switch result {
             case let .failure(error):
-                self.presentErrorAlert(error: error, completion: nil)
+                self.presentErrorAlert(error: error)
             default:
                 break
             }
