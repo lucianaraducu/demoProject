@@ -9,12 +9,14 @@ import Foundation
 
 class ActivityRequestViewModel {
     
-    private var activityModel: ActivityModel?
-    
-    var activityName: String? {
+    private var activityModel: ActivityModel? {
         didSet {
             self.modelUpdated?()
         }
+    }
+    
+    var activityName: String? {
+        activityModel?.activity
     }
     
     var nextViewModel: ActivityDetailsViewModel? {
@@ -35,7 +37,6 @@ class ActivityRequestViewModel {
         networkManager.fetchActivity { result in
             switch result {
             case let .success(activityModel):
-                self.activityName = activityModel.activity
                 self.activityModel = activityModel
                 completionHandler(.success(()))
             case let .failure(error):
