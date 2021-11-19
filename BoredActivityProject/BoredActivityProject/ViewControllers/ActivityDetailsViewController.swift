@@ -9,12 +9,21 @@ import AVFoundation
 import UIKit
 
 class ActivityDetailsViewController: UIViewController {
+    // MARK: - IBOutlets
+    
     @IBOutlet var activityName: UILabel!
     @IBOutlet var price: UILabel!
     @IBOutlet var numberOfPArticipants: UILabel!
     
+    // MARK: - Private
+    
+    private var player: AVAudioPlayer?
+    
+    // MARK: - ViewModel
+    
     var viewModel: ActivityDetailsViewModel?
-    var player: AVAudioPlayer?
+    
+    // MARK: - ViewController lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +37,8 @@ class ActivityDetailsViewController: UIViewController {
         player?.stop()
     }
 }
+
+// MARK: - Private extension
 
 private extension ActivityDetailsViewController {
     func setupTexts() {

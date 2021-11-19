@@ -9,11 +9,17 @@ import Foundation
 
 class ActivityRequestViewModel {
     
+    // MARK: - Private properties
+    
+    private let networkManager: NetworkManager
+    
     private var activityModel: ActivityModel? {
         didSet {
             self.modelUpdated?()
         }
     }
+    
+    // MARK: Exposed properties
     
     var activityName: String? {
         activityModel?.activity
@@ -26,12 +32,15 @@ class ActivityRequestViewModel {
     
     var modelUpdated: (() -> Void)?
     
-    private let networkManager: NetworkManager
+    // MARK: - Init
+    
     init(
         networkManager: NetworkManager
     ) {
         self.networkManager = networkManager
     }
+    
+    // MARK: Methods
     
     func requestActivity(completionHandler: @escaping (Result<Void, Error>) -> Void) {
         networkManager.fetchActivity { result in

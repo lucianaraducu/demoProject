@@ -8,12 +8,18 @@
 import UIKit
 
 class ActivityRequestViewController: UIViewController {
+    // MARK: - IBOutlets
+    
     @IBOutlet var activityNameLabel: UILabel!
     @IBOutlet var showDetailsButton: UIButton!
     @IBOutlet var activityView: UIView!
     @IBOutlet var activityIndicator: UIActivityIndicatorView!
     
+    // MARK: - ViewModel
+    
     var viewModel: ActivityRequestViewModel?
+    
+    // MARK: - ViewController lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +33,8 @@ class ActivityRequestViewController: UIViewController {
             nextViewController.viewModel = viewModel?.nextViewModel
         }
     }
+    
+    // MARK: - Actions
     
     @IBAction func startNewActivity(_ sender: Any) {
         activityIndicator.startAnimating()
@@ -44,6 +52,8 @@ class ActivityRequestViewController: UIViewController {
         }
     }
 }
+
+// MARK: - Private extension
 
 private extension ActivityRequestViewController {
     func setupUIUpdates() {
