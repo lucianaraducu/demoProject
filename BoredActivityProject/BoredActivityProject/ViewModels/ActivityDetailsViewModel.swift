@@ -32,6 +32,14 @@ class ActivityDetailsViewModel {
         "Number of participants for this activity is \(activityModel.participants) 👯‍♂️"
     }
     
+    var activityColor: UIColor {
+        activityModel.type.color
+    }
+    
+    var soundResource: URL? {
+        activityModel.type.soundURL
+    }
+    
     // MARK: - Init
     
     init(activityModel: ActivityModel) {
