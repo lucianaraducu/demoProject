@@ -7,10 +7,22 @@
 
 import Foundation
 
+enum ActivityType: String, Codable {
+    case education
+    case recreational
+    case social
+    case diy
+    case charity
+    case cooking
+    case relaxation
+    case music
+    case busywork
+}
+
 struct ActivityModel: Codable {
     let activity: String
     let accessibility: Double
-    let type: String
+    let type: ActivityType
     let participants: Int
     let price: Double
     let link: String
