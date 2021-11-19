@@ -8,20 +8,24 @@
 import AVFoundation
 import UIKit
 
-var player: AVAudioPlayer?
-
 class ActivityDetailsViewController: UIViewController {
     @IBOutlet var activityName: UILabel!
     @IBOutlet var price: UILabel!
     @IBOutlet var numberOfPArticipants: UILabel!
     
     var viewModel: ActivityDetailsViewModel?
+    var player: AVAudioPlayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTexts()
         setupUI()
         playSound()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        player?.stop()
     }
 }
 
