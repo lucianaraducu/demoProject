@@ -16,6 +16,24 @@
 		671CE86C2747F81600BF7196 /* BoredActivityProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671CE86B2747F81600BF7196 /* BoredActivityProjectTests.swift */; };
 		671CE8762747F81600BF7196 /* BoredActivityProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671CE8752747F81600BF7196 /* BoredActivityProjectUITests.swift */; };
 		671CE8782747F81600BF7196 /* BoredActivityProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671CE8772747F81600BF7196 /* BoredActivityProjectUITestsLaunchTests.swift */; };
+		671CE88A2747F88800BF7196 /* ActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671CE8892747F88800BF7196 /* ActivityModel.swift */; };
+		671CE88C2747F95E00BF7196 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671CE88B2747F95E00BF7196 /* NetworkManager.swift */; };
+		671CE88E2747FAD600BF7196 /* ActivityRequestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671CE88D2747FAD600BF7196 /* ActivityRequestViewModel.swift */; };
+		671CE8902747FBA900BF7196 /* ActivityRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671CE88F2747FBA900BF7196 /* ActivityRequestViewController.swift */; };
+		671CE895274808EC00BF7196 /* UIViewController+ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671CE894274808EC00BF7196 /* UIViewController+ErrorHandling.swift */; };
+		671CE8972748093F00BF7196 /* ErrorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671CE8962748093F00BF7196 /* ErrorConstants.swift */; };
+		671CE899274816FE00BF7196 /* ActivityDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671CE898274816FE00BF7196 /* ActivityDetailsViewController.swift */; };
+		671CE89B2748170F00BF7196 /* ActivityDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671CE89A2748170F00BF7196 /* ActivityDetailsViewModel.swift */; };
+		671CE89F274846BE00BF7196 /* ActivityType+Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671CE89E274846BE00BF7196 /* ActivityType+Properties.swift */; };
+		671CE8A627484D0100BF7196 /* bell_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 671CE8A527484D0100BF7196 /* bell_sound.mp3 */; };
+		671CE8A8274850BA00BF7196 /* busy_work.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 671CE8A7274850BA00BF7196 /* busy_work.mp3 */; };
+		671CE8AA274850DC00BF7196 /* education.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 671CE8A9274850DC00BF7196 /* education.mp3 */; };
+		671CE8AE2748510E00BF7196 /* diy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 671CE8AD2748510E00BF7196 /* diy.mp3 */; };
+		671CE8B02748514200BF7196 /* cooking.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 671CE8AF2748514200BF7196 /* cooking.mp3 */; };
+		671CE8B22748518A00BF7196 /* relaxation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 671CE8B12748518A00BF7196 /* relaxation.mp3 */; };
+		671CE8B4274851A200BF7196 /* social.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 671CE8B3274851A200BF7196 /* social.mp3 */; };
+		671CE8B72748525100BF7196 /* recreational.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 671CE8B52748525100BF7196 /* recreational.mp3 */; };
+		671CE8B82748525100BF7196 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 671CE8B62748525100BF7196 /* music.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +67,24 @@
 		671CE8712747F81600BF7196 /* BoredActivityProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoredActivityProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		671CE8752747F81600BF7196 /* BoredActivityProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoredActivityProjectUITests.swift; sourceTree = "<group>"; };
 		671CE8772747F81600BF7196 /* BoredActivityProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoredActivityProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		671CE8892747F88800BF7196 /* ActivityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityModel.swift; sourceTree = "<group>"; };
+		671CE88B2747F95E00BF7196 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		671CE88D2747FAD600BF7196 /* ActivityRequestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRequestViewModel.swift; sourceTree = "<group>"; };
+		671CE88F2747FBA900BF7196 /* ActivityRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRequestViewController.swift; sourceTree = "<group>"; };
+		671CE894274808EC00BF7196 /* UIViewController+ErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ErrorHandling.swift"; sourceTree = "<group>"; };
+		671CE8962748093F00BF7196 /* ErrorConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorConstants.swift; sourceTree = "<group>"; };
+		671CE898274816FE00BF7196 /* ActivityDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetailsViewController.swift; sourceTree = "<group>"; };
+		671CE89A2748170F00BF7196 /* ActivityDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetailsViewModel.swift; sourceTree = "<group>"; };
+		671CE89E274846BE00BF7196 /* ActivityType+Properties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ActivityType+Properties.swift"; sourceTree = "<group>"; };
+		671CE8A527484D0100BF7196 /* bell_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bell_sound.mp3; sourceTree = "<group>"; };
+		671CE8A7274850BA00BF7196 /* busy_work.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = busy_work.mp3; sourceTree = "<group>"; };
+		671CE8A9274850DC00BF7196 /* education.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = education.mp3; sourceTree = "<group>"; };
+		671CE8AD2748510E00BF7196 /* diy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = diy.mp3; sourceTree = "<group>"; };
+		671CE8AF2748514200BF7196 /* cooking.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cooking.mp3; sourceTree = "<group>"; };
+		671CE8B12748518A00BF7196 /* relaxation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = relaxation.mp3; sourceTree = "<group>"; };
+		671CE8B3274851A200BF7196 /* social.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = social.mp3; sourceTree = "<group>"; };
+		671CE8B52748525100BF7196 /* recreational.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = recreational.mp3; sourceTree = "<group>"; };
+		671CE8B62748525100BF7196 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +135,13 @@
 		671CE8532747F81400BF7196 /* BoredActivityProject */ = {
 			isa = PBXGroup;
 			children = (
+				671CE8A02748481400BF7196 /* Resources */,
+				671CE893274808CA00BF7196 /* Common */,
+				671CE8882747F87400BF7196 /* Views */,
+				671CE8872747F86A00BF7196 /* ViewControllers */,
+				671CE8862747F85F00BF7196 /* ViewModels */,
+				671CE8852747F85500BF7196 /* NetworkManager */,
+				671CE8842747F84700BF7196 /* Models */,
 				671CE8542747F81400BF7196 /* AppDelegate.swift */,
 				671CE8562747F81400BF7196 /* SceneDelegate.swift */,
 				671CE8582747F81400BF7196 /* ViewController.swift */,
@@ -125,6 +168,73 @@
 				671CE8772747F81600BF7196 /* BoredActivityProjectUITestsLaunchTests.swift */,
 			);
 			path = BoredActivityProjectUITests;
+			sourceTree = "<group>";
+		};
+		671CE8842747F84700BF7196 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				671CE8892747F88800BF7196 /* ActivityModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		671CE8852747F85500BF7196 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				671CE88B2747F95E00BF7196 /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		671CE8862747F85F00BF7196 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				671CE88D2747FAD600BF7196 /* ActivityRequestViewModel.swift */,
+				671CE89A2748170F00BF7196 /* ActivityDetailsViewModel.swift */,
+				671CE89E274846BE00BF7196 /* ActivityType+Properties.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		671CE8872747F86A00BF7196 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				671CE88F2747FBA900BF7196 /* ActivityRequestViewController.swift */,
+				671CE898274816FE00BF7196 /* ActivityDetailsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		671CE8882747F87400BF7196 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		671CE893274808CA00BF7196 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				671CE894274808EC00BF7196 /* UIViewController+ErrorHandling.swift */,
+				671CE8962748093F00BF7196 /* ErrorConstants.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		671CE8A02748481400BF7196 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				671CE8A7274850BA00BF7196 /* busy_work.mp3 */,
+				671CE8A527484D0100BF7196 /* bell_sound.mp3 */,
+				671CE8B62748525100BF7196 /* music.mp3 */,
+				671CE8B52748525100BF7196 /* recreational.mp3 */,
+				671CE8A9274850DC00BF7196 /* education.mp3 */,
+				671CE8B12748518A00BF7196 /* relaxation.mp3 */,
+				671CE8B3274851A200BF7196 /* social.mp3 */,
+				671CE8AF2748514200BF7196 /* cooking.mp3 */,
+				671CE8AD2748510E00BF7196 /* diy.mp3 */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +342,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				671CE8612747F81500BF7196 /* LaunchScreen.storyboard in Resources */,
+				671CE8B4274851A200BF7196 /* social.mp3 in Resources */,
+				671CE8A8274850BA00BF7196 /* busy_work.mp3 in Resources */,
 				671CE85E2747F81500BF7196 /* Assets.xcassets in Resources */,
+				671CE8AE2748510E00BF7196 /* diy.mp3 in Resources */,
 				671CE85C2747F81400BF7196 /* Main.storyboard in Resources */,
+				671CE8A627484D0100BF7196 /* bell_sound.mp3 in Resources */,
+				671CE8B22748518A00BF7196 /* relaxation.mp3 in Resources */,
+				671CE8B82748525100BF7196 /* music.mp3 in Resources */,
+				671CE8B72748525100BF7196 /* recreational.mp3 in Resources */,
+				671CE8AA274850DC00BF7196 /* education.mp3 in Resources */,
+				671CE8B02748514200BF7196 /* cooking.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +377,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				671CE89B2748170F00BF7196 /* ActivityDetailsViewModel.swift in Sources */,
+				671CE899274816FE00BF7196 /* ActivityDetailsViewController.swift in Sources */,
+				671CE88A2747F88800BF7196 /* ActivityModel.swift in Sources */,
+				671CE8902747FBA900BF7196 /* ActivityRequestViewController.swift in Sources */,
+				671CE88E2747FAD600BF7196 /* ActivityRequestViewModel.swift in Sources */,
 				671CE8592747F81400BF7196 /* ViewController.swift in Sources */,
+				671CE88C2747F95E00BF7196 /* NetworkManager.swift in Sources */,
 				671CE8552747F81400BF7196 /* AppDelegate.swift in Sources */,
+				671CE895274808EC00BF7196 /* UIViewController+ErrorHandling.swift in Sources */,
+				671CE8972748093F00BF7196 /* ErrorConstants.swift in Sources */,
 				671CE8572747F81400BF7196 /* SceneDelegate.swift in Sources */,
+				671CE89F274846BE00BF7196 /* ActivityType+Properties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
