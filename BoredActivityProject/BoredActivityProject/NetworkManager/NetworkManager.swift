@@ -34,10 +34,14 @@ final class NetworkManager {
         return
       }
 
-      if let data = data,
-        let activityDetails = try? JSONDecoder().decode(ActivityModel.self, from: data) {
-          completionHandler(.success(activityDetails))
-      }
+        do {
+            if let data = data {
+              let activityDetails = try JSONDecoder().decode(ActivityModel.self, from: data)
+                completionHandler(.success(activityDetails))
+            }
+        } catch {
+            completionHandler(.failure(ActivityFetchError.customError(message: error.localizedDescription)))
+        }
     })
     task.resume()
   }
