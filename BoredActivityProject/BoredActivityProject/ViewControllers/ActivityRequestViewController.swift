@@ -35,14 +35,6 @@ class ActivityRequestViewController: UIViewController {
             }
         }
     }
-//
-//    @IBAction func showActivityDetails(_ sender: Any) {
-//        guard let nextViewModel = viewModel?.nextViewModel,
-//        let nextViewController = storyboard.instantiateViewController(withIdentifier: ActivityDetailsViewController.viewControllerIdentifier) as? ActivityDetailsViewController else { return }
-//        let storyboard = UIStoryboard(name: ActivityDetailsViewController.storyboardIdentifier, bundle: nil)
-//        nextViewController.viewModel = nextViewModel
-//        present(nextViewController, animated: true)
-//    }
 }
 
 private extension ActivityRequestViewController {

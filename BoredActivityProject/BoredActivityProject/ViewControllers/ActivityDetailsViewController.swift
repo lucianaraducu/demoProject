@@ -51,13 +51,3 @@ private extension ActivityDetailsViewController {
         }
     }
 }
-
-extension ActivityDetailsViewController {
-    static var storyboardIdentifier: String {
-        "Main"
-    }
-    
-    static var viewControllerIdentifier: String {
-        "ActivityDetailsViewController"
-    }
-}
