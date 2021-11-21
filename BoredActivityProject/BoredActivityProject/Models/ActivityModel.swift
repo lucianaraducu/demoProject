@@ -7,6 +7,8 @@
 
 import Foundation
 
+/// ActivityType is a property of the ActivityModel
+/// Each activity has a color and a sound resource asociated to it
 enum ActivityType: String, Codable, CaseIterable, Hashable {
     case education
     case recreational
@@ -19,6 +21,7 @@ enum ActivityType: String, Codable, CaseIterable, Hashable {
     case busywork
 }
 
+/// ActivityModel contains the properties of an activity requested from the BoredAPI.
 struct ActivityModel: Codable, Hashable {
     let activity: String
     let accessibility: Double

@@ -17,6 +17,7 @@ protocol NetworkManagerProtocol {
     func fetchActivity(completionHandler: @escaping (Result<ActivityModel, Error>) -> Void)
 }
 
+/// Manages requests to the BoredAPi
 final class NetworkManager: NetworkManagerProtocol {
     private let domainUrlString = "http://www.boredapi.com/api/activity/"
     

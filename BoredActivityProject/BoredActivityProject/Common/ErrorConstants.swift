@@ -8,6 +8,8 @@
 import UIKit
 
 extension Error {
+    /// Gets the message set in the Localizable file in case the Error is an `ActivityFetchError`
+    /// Otherwise, the `localizedDescription` of the `Error` itself is retrieved
     var errorMessage: String {
         if let activityError = self as? ActivityFetchError {
             switch activityError {

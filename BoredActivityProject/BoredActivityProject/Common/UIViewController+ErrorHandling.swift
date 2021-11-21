@@ -9,6 +9,8 @@ import Foundation
 import UIKit
 
 extension UIViewController {
+    /// Presents an error alert with a single button that dismissed the alert when tapped
+    /// - parameter error: Based on the error parameter, the message inside the alert is configured
     func presentErrorAlert(error: Error) {
         let cancelText = error.errorMessage
         
