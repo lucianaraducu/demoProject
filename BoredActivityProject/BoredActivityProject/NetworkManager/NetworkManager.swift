@@ -30,6 +30,7 @@ final class NetworkManager: NetworkManagerProtocol {
     
     /// Fetch a random activity from an url
     /// Result will be an ActivityModel or error based on the request result
+    /// - Parameter completionHandler: Completion handler for request result behaviour
     func fetchActivity(completionHandler: @escaping (Result<ActivityModel, Error>) -> Void) {
         guard let url = URL(string: domainUrlString) else {
             completionHandler(.failure(ActivityFetchError.urlNotSetup))
