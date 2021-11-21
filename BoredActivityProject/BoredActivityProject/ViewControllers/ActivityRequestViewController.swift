@@ -70,11 +70,7 @@ private extension ActivityRequestViewController {
     }
     
     func setupUI() {
-        activityView.layer.cornerRadius = 10
-        activityView.layer.borderWidth = 1
-        activityView.layer.borderColor = UIColor.blue.cgColor
-        activityView.layer.shadowColor = UIColor.black.cgColor
-        activityView.layer.shadowRadius = 4.0
+        activityView.addLayer(borderColor: UIColor.blue.cgColor)
     }
     
     func setTexts() {

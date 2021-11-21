@@ -11,9 +11,12 @@ import UIKit
 class ActivityDetailsViewController: UIViewController {
     // MARK: - IBOutlets
     
+    @IBOutlet var activityNameHolder: UIView!
     @IBOutlet var activityName: UILabel!
     @IBOutlet var price: UILabel!
+    @IBOutlet var priceHolder: UIView!
     @IBOutlet var numberOfPArticipants: UILabel!
+    @IBOutlet var numberOfParticipantsHolder: UIView!
     
     // MARK: - Private
     
@@ -36,6 +39,12 @@ class ActivityDetailsViewController: UIViewController {
         super.viewWillDisappear(animated)
         player?.stop()
     }
+    
+    // MARK: - Button action
+    
+    @IBAction func actionOnClose(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
 }
 
 // MARK: - Private extension
@@ -49,6 +58,7 @@ private extension ActivityDetailsViewController {
     
     func setupUI() {
         view.backgroundColor = viewModel?.activityColor
+        [activityNameHolder, priceHolder, numberOfParticipantsHolder].forEach { $0?.addLayer(borderColor: UIColor.black.cgColor) }
     }
     
     func playSound() {

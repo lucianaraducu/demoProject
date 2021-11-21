@@ -16,7 +16,7 @@
 "error_common" = "Something went wrong %@";
 
 // Activity details
-"activity_name" = "Activity name ➡️ ";
+"activity_name" = "Activity name ➡️ %@";
 "activity_cost_free" = "Price ➡️ This activity is free 🎉";
 "activity_cost_value" = "Price ➡️ Price of this activity is %@ 💰";
 "activity_number_of_participants" = "Number of participants ➡️ %@ 👯‍♂️";
