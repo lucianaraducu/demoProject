@@ -13,7 +13,11 @@ enum ActivityFetchError: Error {
     case customError(message: String)
 }
 
-final class NetworkManager {
+protocol NetworkManagerProtocol {
+    func fetchActivity(completionHandler: @escaping (Result<ActivityModel, Error>) -> Void)
+}
+
+final class NetworkManager: NetworkManagerProtocol {
   private let domainUrlString = "http://www.boredapi.com/api/activity/"
   
     /// Fetch a random activity from an url

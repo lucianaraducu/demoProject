@@ -11,7 +11,7 @@ class ActivityRequestViewModel {
     
     // MARK: - Private properties
     
-    private let networkManager: NetworkManager
+    private let networkManager: NetworkManagerProtocol
     
     private var activityModel: ActivityModel? {
         didSet {
@@ -35,7 +35,7 @@ class ActivityRequestViewModel {
     // MARK: - Init
     
     init(
-        networkManager: NetworkManager
+        networkManager: NetworkManagerProtocol
     ) {
         self.networkManager = networkManager
     }
