@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum ActivityType: String, Codable {
+enum ActivityType: String, Codable, CaseIterable, Hashable {
     case education
     case recreational
     case social
@@ -19,7 +19,7 @@ enum ActivityType: String, Codable {
     case busywork
 }
 
-struct ActivityModel: Codable {
+struct ActivityModel: Codable, Hashable {
     let activity: String
     let accessibility: Double
     let type: ActivityType

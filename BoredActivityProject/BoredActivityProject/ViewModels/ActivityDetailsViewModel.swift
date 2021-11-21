@@ -17,20 +17,19 @@ class ActivityDetailsViewModel {
     // MARK: - Exposed properties
     
     var activityName: String {
-        "Activity name ➡️ " + activityModel.activity
+        String(format: "activity_name".localized, activityModel.activity)
     }
     
     var price: String {
-        let priceInfo = "Price ➡️ "
         if activityModel.price == 0 {
-            return  priceInfo + "This activity is free 🎉"
+            return  "activity_cost_free".localized
         } else {
-            return priceInfo + "Price of this activity is \(String(activityModel.price)) 💰"
+            return String(format: "activity_cost_value".localized, String(activityModel.price))
         }
     }
     
     var numberOfParticipants: String {
-        "Number of participants ➡️ \(activityModel.participants) 👯‍♂️"
+        String(format: "activity_number_of_participants".localized, String(activityModel.participants))
     }
     
     var activityColor: UIColor {

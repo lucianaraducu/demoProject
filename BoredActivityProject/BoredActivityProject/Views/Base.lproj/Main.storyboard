@@ -75,6 +75,8 @@
                         <outlet property="activityNameLabel" destination="Tcq-ro-myM" id="QaW-HE-Bwk"/>
                         <outlet property="activityView" destination="lp4-Kb-uBy" id="VkJ-uR-0VK"/>
                         <outlet property="showDetailsButton" destination="QPg-LN-fsb" id="aA0-JJ-e3Y"/>
+                        <outlet property="startNewActivityButton" destination="nTh-qV-rdV" id="goo-HD-dVN"/>
+                        <outlet property="viewNewActivityButton" destination="QPg-LN-fsb" id="kvJ-dV-Jee"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

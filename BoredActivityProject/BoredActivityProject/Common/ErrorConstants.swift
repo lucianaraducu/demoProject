@@ -5,16 +5,18 @@
 //  Created by Luciana Raducu on 19.11.21.
 //
 
+import UIKit
+
 extension Error {
     var errorMessage: String {
         if let activityError = self as? ActivityFetchError {
             switch activityError {
-            case .activityNotFound:
-                return "Activity was not found."
+            case .activityRequestError:
+                return "error_activity_request_error".localized
             case .urlNotSetup:
-                return "Why did you not set the url correctly?"
+                return "error_incorect_url_for_activity".localized
             case .customError(let message):
-                return "Something went wrong \(message)"
+                return String(format: "error_common".localized, message)
             }
         } else {
             return localizedDescription

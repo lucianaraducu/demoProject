@@ -10,6 +10,8 @@ import UIKit
 class ActivityRequestViewController: UIViewController {
     // MARK: - IBOutlets
     
+    @IBOutlet var viewNewActivityButton: UIButton!
+    @IBOutlet var startNewActivityButton: UIButton!
     @IBOutlet var activityNameLabel: UILabel!
     @IBOutlet var showDetailsButton: UIButton!
     @IBOutlet var activityView: UIView!
@@ -25,6 +27,7 @@ class ActivityRequestViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
         setupUIUpdates()
+        setTexts()
         setVisibility(false)
     }
     
@@ -67,12 +70,17 @@ private extension ActivityRequestViewController {
     }
     
     func setupUI() {
-        activityNameLabel.text = viewModel?.activityName
         activityView.layer.cornerRadius = 10
         activityView.layer.borderWidth = 1
         activityView.layer.borderColor = UIColor.blue.cgColor
         activityView.layer.shadowColor = UIColor.black.cgColor
         activityView.layer.shadowRadius = 4.0
+    }
+    
+    func setTexts() {
+        activityNameLabel.text = viewModel?.activityName
+        startNewActivityButton.titleLabel?.text = viewModel?.startNewActivityText
+        showDetailsButton.titleLabel?.text = viewModel?.viewNewActivityText
     }
     
     func setVisibility(_ show: Bool) {

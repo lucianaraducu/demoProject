@@ -5,3 +5,19 @@
   Created by Luciana Raducu on 20.11.21.
   
 */
+
+// Request activities
+"start_new_activity" = "Let's try out a new activity 🎉";
+"view_new_activity" = "Check out activity 👀";
+
+// Errors
+"error_activity_request_error" = "There was something wrong with the request. Try again later 🙈";
+"error_incorect_url_for_activity" = "Why did you not set the url correctly?";
+"error_common" = "Something went wrong %@";
+
+// Activity details
+"activity_name" = "Activity name ➡️ ";
+"activity_cost_free" = "Price ➡️ This activity is free 🎉";
+"activity_cost_value" = "Price ➡️ Price of this activity is %@ 💰";
+"activity_number_of_participants" = "Number of participants ➡️ %@ 👯‍♂️";
+

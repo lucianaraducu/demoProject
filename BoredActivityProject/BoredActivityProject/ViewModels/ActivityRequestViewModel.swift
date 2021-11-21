@@ -21,6 +21,14 @@ class ActivityRequestViewModel {
     
     // MARK: Exposed properties
     
+    var startNewActivityText: String {
+        "start_new_activity".localized
+    }
+    
+    var viewNewActivityText: String {
+        "view_new_activity".localized
+    }
+    
     var activityName: String? {
         activityModel?.activity
     }
