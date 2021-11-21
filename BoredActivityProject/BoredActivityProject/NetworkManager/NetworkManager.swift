@@ -22,7 +22,9 @@ final class NetworkManager: NetworkManagerProtocol {
     
     let session: URLSession
     
-    init(urlSession: URLSession = .shared) {
+    init(
+        urlSession: URLSession = .shared
+    ) {
         self.session = urlSession
     }
     

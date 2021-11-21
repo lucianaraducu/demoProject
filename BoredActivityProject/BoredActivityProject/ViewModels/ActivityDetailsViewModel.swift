@@ -42,7 +42,9 @@ class ActivityDetailsViewModel {
     
     // MARK: - Init
     
-    init(activityModel: ActivityModel) {
+    init(
+        activityModel: ActivityModel
+    ) {
         self.activityModel = activityModel
     }
 }
