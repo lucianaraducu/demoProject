@@ -12,5 +12,5 @@ This little project uses the bored API to get a random activity and display the 
 
 * The details screen is configured based on the activity type. Each type has a small sound and a background color for the screen associated with it. Below is an example of an activity details screen:
 
-<img src="https://user-images.githubusercontent.com/94698809/142764554-71979eeb-6fb6-4d7d-ae01-3a2f8d9bffd0.png" width="20%" height="20%">
+<img src="https://user-images.githubusercontent.com/94698809/142767951-34f51a64-91de-4dcf-928c-7cdc67beb959.png" width="20%" height="20%">
 
